@@ -1,6 +1,7 @@
 $color: white;
 $color-hover: orange;
-
+.container2{ display: none; }
+.container3{ display: none; }
 .container{
     display: grid;
     grid-template-columns: 30% 40% 30%;
@@ -8,16 +9,21 @@ $color-hover: orange;
     background-color: #2d3b5a;
 }
 
+
+
 .brand{ font-size: 40px; color: #94aec1a1; }
 
-.offer{
-    color: white;
-}
 
-.item{ 
-    display: grid; 
+.item{ display: grid; }
+
+.admin{
     grid-template-columns: 80% 20%;
 }
+
+.admin a{
+    font-size: 17px;
+}
+
 .main{
     align-self: center;
 }
@@ -46,11 +52,49 @@ a{
     }
 }
 
-.admin a{
-    font-size: 17px;
-}
+
 
 
 .active{
     color: $color-hover;
+}
+
+
+@media (max-width: 1390px) {
+    .container{
+        display: grid;
+        grid-template-columns: 30% 30% 40%;
+        
+    }
+    .container3{ display: none; }
+}
+
+@media (max-width: 1083px){
+    .offer{
+        display: none;
+    }
+    .container{ display: none; }
+    .container2{ 
+        display: grid;
+        grid-template-columns: 50% 50%;
+        height: 60px;
+        background-color: #2d3b5a;
+    }
+    .container3{ display: none; }
+}
+
+@media (max-width: 815px){
+    .container{ display: none; }
+    .container2{ display: none; }
+    .container3{ 
+        display: grid;
+        grid-template-columns: 50% 50%;
+        height: 60px;
+        background-color: #2d3b5a;
+    }
+
+    .material-icons{
+        color: white;
+        font-size: 40px;
+    }
 }
