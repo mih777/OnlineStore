@@ -8,14 +8,24 @@ $color-hover: orange;
     background-color: #2d3b5a;
 }
 
-.brand:hover{ font-size: 50px; color: yellowgreen; }
+.brand{ font-size: 40px; color: #94aec1a1; }
 
 .offer{
     color: white;
 }
 
 .item{ display: grid; }
-.menu{ align-self: center; }
+.menu{ 
+    align-self: center;
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+.shopping_cart{ color: #c6ced4; }
+
+.login-menu-items{
+
+}
 
 li{
     display: inline-block;
