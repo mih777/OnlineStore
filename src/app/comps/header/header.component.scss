@@ -1,0 +1,42 @@
+$color: white;
+$color-hover: orange;
+
+.container{
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    height: 60px;
+    background-color: #2d3b5a;
+}
+
+.brand:hover{ font-size: 50px; color: yellowgreen; }
+
+.offer{
+    color: white;
+}
+
+.item{ display: grid; }
+.menu{ align-self: center; }
+
+li{
+    display: inline-block;
+    margin-left: 15px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 27px;
+    color: $color;
+    
+    &:hover{
+        color: $color-hover;
+    }
+}
+
+.admin a{
+    font-size: 17px;
+}
+
+
+.active{
+    color: $color-hover;
+}
