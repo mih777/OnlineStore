@@ -96,5 +96,44 @@ a{
     .material-icons{
         color: white;
         font-size: 40px;
+        //margin-left: 10px;
     }
+
+    .menu-right{
+        padding-left: 10px;
+    }
+
+    .list-menu{
+        border: 1px solid rgb(207, 207, 207);
+        position: absolute;
+        padding-right: 5px;
+        min-width: 200px;
+        min-height: 200px;
+        margin-left: 0;
+        margin-top: 0;
+        background-color: white;
+    }
+
+    li{
+        display:table;
+        margin-left: 15px;
+    }
+
+    a{
+        color: #2d3b5a;
+        font-size: 20px;
+        line-height: 2;
+    }
+
+    .close{
+        
+        
+        
+        color: #2d3b5a;
+    }
+
+    .noVisible{
+        display: none;
+    }
+
 }
