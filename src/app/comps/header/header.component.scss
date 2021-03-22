@@ -14,17 +14,21 @@ $color-hover: orange;
     color: white;
 }
 
-.item{ display: grid; }
-.menu{ 
-    align-self: center;
-    display: grid;
+.item{ 
+    display: grid; 
     grid-template-columns: 80% 20%;
 }
-
-.shopping_cart{ color: #c6ced4; }
+.main{
+    align-self: center;
+}
 
 .login-menu-items{
+    align-self: center;
+}
 
+.shopping_cart{ 
+    color: #c6ced4; 
+    font-size: 40px;
 }
 
 li{
