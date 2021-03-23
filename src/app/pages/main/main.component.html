@@ -16,22 +16,31 @@
         
     </div>
 
+    <!-- list-view-content========================= -->
     
-        <app-cart></app-cart>
-        <app-cart></app-cart>
-        <app-cart></app-cart>
+    <ng-template *ngIf="listView">
+        <div class="list-view-content">
+            <app-cart></app-cart>
+            <app-cart></app-cart>
+            <app-cart></app-cart>
+        </div>
+    </ng-template>
     
-
-    <!-- <div class="content">
-        <app-cart></app-cart>
-        <app-cart></app-cart>
-        <app-cart></app-cart>
-        <app-cart></app-cart>
-        <app-cart></app-cart>
-        <app-cart></app-cart>
-        <app-cart></app-cart>
-        <app-cart></app-cart>
-    </div> -->
+    
+    
+    <!-- briks-view-content =============================-->
+    <ng-template *ngIf="!listView">
+        <div class="content">
+            <app-cart></app-cart>
+            <app-cart></app-cart>
+            <app-cart></app-cart>
+            <app-cart></app-cart>
+            <app-cart></app-cart>
+            <app-cart></app-cart>
+            <app-cart></app-cart>
+            <app-cart></app-cart>
+        </div>
+    </ng-template>
     
     
 
