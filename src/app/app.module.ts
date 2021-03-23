@@ -8,6 +8,7 @@ import { ContentComponent } from './comps/content/content.component';
 import { FooterComponent } from './comps/footer/footer.component';
 import { MainComponent } from './pages/main/main.component';
 import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
+import { CartComponent } from './comps/cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { ProductDetailComponent } from './pages/product-detail/product-detail.co
     ContentComponent,
     FooterComponent,
     MainComponent,
+    CartComponent,
     ProductDetailComponent
   ],
   imports: [
