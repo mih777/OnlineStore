@@ -1,10 +1,19 @@
 $click-color: #436973;
 $click-color-hover: #5c8d9b;
 
-.content{
+img{
+    height: 300px;
+}
+
+.list-container-main{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.container{
+    display: grid;
     margin-top: 20px;
+    justify-items: center;
 }
 
 .buy-button{
@@ -22,147 +31,4 @@ $click-color-hover: #5c8d9b;
             background-color: $click-color-hover;
         }
     
-}
-.content a{
-    text-decoration: none;
-}
-.cart{
-    border-radius: 2px;
-    color: rgb(0, 46, 121);
-    &:hover{
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    }
-}
-
-.cart-item-rating > .material-icons{
-    font-size: 18px;
-}
-
-.cart{ display: grid; }
-.cart-item { 
-    justify-self: center;
-    padding-bottom: 20px;
-    padding-top: 20px;
-}
-
-.cart-item img{ 
-    height: 300px;
-}
-
-.container{
-    display: grid;
-}
-
-.filter{
-    margin-top: 1%;
-    display: grid;
-    grid-template-columns: 10% 90%;
-}
-
-
-.filter-view{
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-
-.filter-search{
-    display: grid;
-    grid-template-columns: 50% 50%;
-
-    .search-input{
-        justify-self: end;
-        align-self: center;
-    }
-    
-    .search-button{
-        justify-self: start;
-        align-self: center;
-        button{
-            height: 35px;
-            width: 100px;
-            border: none;
-            background-color: $click-color;
-            border-radius: 2px;
-            color: white;
-            margin-left: 5px;
-            font-size: 20px;
-            outline: none;
-            &:hover{
-                background-color: $click-color-hover;
-            }
-        }
-    }
-    
-}
-
-  
-
-.material-icons{
-    font-size: 44px;
-    color: $click-color;
-}
-
-.filter-search input{
-    height: 30px;
-    font-size: 25px;
-    justify-self: end;
-    align-self: center;
-    padding-left: 5px;
-    padding-bottom: 2px;
-    color: $click-color;
-}
-
-.filter-sort{
-    display: grid;
-    grid-template-columns: 20% 80%;
-    
-}
-
-.filter-sort input{
-    height: 25px;
-    
-}
-.filter-sort  select{
-    height: 30px;
-}
-
-.filter-sort  button{
-    height: 30px;
-    width: 60px;
-    border: none;
-    background-color: gray;
-    border-radius: 2px;
-    color: white;
-    margin-left: 5px;
-    font-size: 20px;
-    outline: none;
-    &:hover{
-        background-color: $click-color-hover;
-    }
-}
-
-
-.filter-sort-price{
-    display: grid;
-    grid-template-columns: 40% 40% 20%;
-}
-
-.filter-sort-price-item{
-    align-self: center;
-     
-}
-
-.left{
-    margin-left: 5px;
-}
-
-.left input{
-    padding-left: 5px;
-}
-
-.filter-sort-item{
-    display: grid;
-}
-.form-group{
-    align-self: center;
 }
