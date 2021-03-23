@@ -1,16 +1,30 @@
 $click-color: #436973;
 $click-color-hover: #5c8d9b;
 
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.cart{ display: grid; }
+.cart-item { 
+    justify-self: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.cart-item img{ 
+    height: 300px;
+}
+
 .container{
     display: grid;
-    grid-template-columns: 100%;
-    
 }
 
 .filter{
     margin-top: 1%;
     display: grid;
-    grid-template-columns: 10% 50% 40%;
+    grid-template-columns: 10% 90%;
 }
 
 
