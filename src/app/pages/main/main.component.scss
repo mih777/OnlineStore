@@ -4,6 +4,38 @@ $click-color-hover: #5c8d9b;
 .content{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 20px;
+}
+
+.buy-button{
+    
+        height: 35px;
+        width: 100px;
+        border: none;
+        background-color: $click-color;
+        border-radius: 2px;
+        color: white;
+        margin-left: 5px;
+        font-size: 20px;
+        outline: none;
+        &:hover{
+            background-color: $click-color-hover;
+        }
+    
+}
+.content a{
+    text-decoration: none;
+}
+.cart{
+    border-radius: 2px;
+    color: rgb(0, 46, 121);
+    &:hover{
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+}
+
+.cart-item-rating > .material-icons{
+    font-size: 18px;
 }
 
 .cart{ display: grid; }
