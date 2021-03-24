@@ -16,3 +16,42 @@ body{
 input, select{
     outline: none;
 }
+
+$click-color: #436973;
+$click-color-hover: #5c8d9b;
+
+
+.buy-button{
+    
+    height: 35px;
+    width: 100px;
+    border: none;
+    background-color: $click-color;
+    border-radius: 2px;
+    color: white;
+    margin-left: 5px;
+    font-size: 20px;
+    outline: none;
+    &:hover{
+        background-color: $click-color-hover;
+    }
+
+}
+
+.simple-button{
+    padding: 10px;
+    padding-bottom: 28px;
+    height: 35px;
+    min-width: 100px;
+    border: none;
+    background-color: rgb(255, 153, 0);
+    border-radius: 2px;
+    color: white;
+    margin-left: 5px;
+    font-size: 15px;
+    outline: none;
+    &:hover{
+        background-color: rgb(255, 115, 0);
+    }
+
+}

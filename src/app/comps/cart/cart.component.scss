@@ -1,5 +1,4 @@
-$click-color: #436973;
-$click-color-hover: #5c8d9b;
+
 
 img{
     height: 200px;
@@ -58,19 +57,4 @@ img{
     }
 }
 
-.buy-button{
-    
-        height: 35px;
-        width: 100px;
-        border: none;
-        background-color: $click-color;
-        border-radius: 2px;
-        color: white;
-        margin-left: 5px;
-        font-size: 20px;
-        outline: none;
-        &:hover{
-            background-color: $click-color-hover;
-        }
-    
-}
+
