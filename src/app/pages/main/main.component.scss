@@ -5,14 +5,17 @@ $click-color-hover: #5c8d9b;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-items: center;
+    margin-top: 50px;
 }
 
 .content2{
-
+    margin-top: 50px;
 }
+
 
 .container{
     display: grid;
+    
 }
 
 .filter{
@@ -21,11 +24,6 @@ $click-color-hover: #5c8d9b;
     grid-template-columns: 10% 90%;
 }
 
-
-.filter-view{
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
 
 .filter-search{
     display: grid;
