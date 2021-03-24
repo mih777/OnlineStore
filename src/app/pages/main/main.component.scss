@@ -1,18 +1,14 @@
 $click-color: #436973;
 $click-color-hover: #5c8d9b;
 
-.list-content{
-    //display: grid;
-     
-}
-
-.list-view-content{
-    margin-top: 70px;
-}
-
 .content{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.content2{
+
 }
 
 .container{

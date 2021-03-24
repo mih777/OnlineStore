@@ -2,7 +2,20 @@ $click-color: #436973;
 $click-color-hover: #5c8d9b;
 
 img{
-    height: 300px;
+    height: 200px;
+}
+
+.content{
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 30% 30% 40%;
+}
+
+.content-pltka{
+    justify-items: center;
+    width: 200px;
+    display: grid;
+    grid-template-rows: auto;
 }
 
 .list-container-main{

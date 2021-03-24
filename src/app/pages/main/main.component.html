@@ -1,8 +1,8 @@
 <div class="container border">
     <div class="filter ">
         <div class="filter-view ">
-            <div><span class="material-icons ">view_list</span></div>
-            <div><span class="material-icons ">view_module</span></div>
+            <div><span class="material-icons " (click)="isList()">view_list</span></div>
+            <div><span class="material-icons " (click)="isList()">view_module</span></div>
         </div>
         <div class="filter-search ">
             <div class="search-input">
@@ -16,31 +16,34 @@
         
     </div>
 
-    <!-- list-view-content========================= -->
+
+<!-- <button (click)="isList()">list</button>
+<button (click)="isList()">plitka</button> -->
+
+<div class="content" *ngIf="listView">
+  
+  <app-cart [listView]="listView"></app-cart>
+  <app-cart [listView]="listView"></app-cart>
+  <app-cart [listView]="listView"></app-cart>
+  <app-cart [listView]="listView"></app-cart>
+  <app-cart [listView]="listView"></app-cart>
+  <app-cart [listView]="listView"></app-cart>
+  <app-cart [listView]="listView"></app-cart>
+
+</div>
+
+<div class="content2" *ngIf="!listView">
+  <app-cart [listView]="listView"></app-cart> 
+  <app-cart [listView]="listView"></app-cart>
+  <app-cart [listView]="listView"></app-cart>
+  <app-cart [listView]="listView"></app-cart>
+  <app-cart [listView]="listView"></app-cart>
+  <app-cart [listView]="listView"></app-cart>
+  <app-cart [listView]="listView"></app-cart>
+  <app-cart [listView]="listView"></app-cart> 
+  
+</div>   
     
-    <ng-template *ngIf="listView">
-        <div class="list-view-content">
-            <app-cart></app-cart>
-            <app-cart></app-cart>
-            <app-cart></app-cart>
-        </div>
-    </ng-template>
-    
-    
-    
-    <!-- briks-view-content =============================-->
-    <ng-template *ngIf="!listView">
-        <div class="content">
-            <app-cart></app-cart>
-            <app-cart></app-cart>
-            <app-cart></app-cart>
-            <app-cart></app-cart>
-            <app-cart></app-cart>
-            <app-cart></app-cart>
-            <app-cart></app-cart>
-            <app-cart></app-cart>
-        </div>
-    </ng-template>
     
     
 

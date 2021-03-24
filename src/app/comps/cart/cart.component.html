@@ -1,75 +1,47 @@
-
-<div class="list-container-main border">
+<!--////////////////////// plitka view //////////////////-->
+<div class="content-pltka border"  *ngIf="listView">
+    
     <div class="border">
-        <a href=""><img src="https://github.com/mih777/images/blob/master/iphone.jpeg?raw=true" alt=""></a>
+        <img src="https://github.com/mih777/images/blob/master/iphone.jpeg?raw=true" alt="">
     </div>
     <div class="border">
-        <div>
-            ID: 5761058<br>
-            Артикул: 821238<br>
-            Диагональ (дюйм): 6.67<br>
-            Разрешение (пикс): 2400x1080<br>
-            Встроенная память (Гб): 128<br>
-            Фотокамера (Мп): 64 + 8 + 5 + 2<br>
-             (четыре основные камеры)<br>
-            Процессор: Qualcomm Snapdragon 720G<br><br>
-        </div>
-        <div >
-            <span class="material-icons star_border">
-                star_border
-                star_border
-                star_border
-                star_border
-                star_border
-            </span>
-        </div>
-        <div class="cart-item-price cart-item">
-            <h3>цена 3453413</h3>
-        </div>
+        <h2>price 234987</h2>
     </div>
     <div class="border">
-        <div>
-            <p>Мобильный телефон Xiaomi Redmi Note 9 Pro 6/128GB (белый) 
-                СИСТЕМА ЧЕТЫРЕХ КАМЕР ФЛАГМАНСКОГО УРОВНЯ Redmi Note 9 Pro 
-                оснащен системой четырех камер флагманского уровня. Основной 
-                модуль с разрешением 64 Мп позволяет делать снимки невероятного
-                 качества, а благодаря сверхширокоугольной камере, макро 
-                 камере и сенсору глубины вы всегда будете готовы к съемке в 
-                 любых условиях. КАЖДЫЙ МОМЕНТ ДОЛЖЕН БЫТЬ ЗАПЕЧАТЛЕН Система
-                  камер Redmi Note 9 Pro со сверхвысоким разрешением и алгоритмами 
-                  нейронной обработки изображения гарантирует, что вы 
-                  всегда будете готовы к съемке мимолетных моментов.
-                   Влюбитесь в фотографию и сохраните самые важные воспоминания.
-                </p>
-        </div><br><br>
-        <div class="cart-item-buy cart-item">
-            <button class="buy-button">buy</button>
-        </div>
+        <button>buy</button>
     </div>
+    
 </div>
 
 
 
 
 
-<!-- <div class="container border">
-    <div>
-        <a href=""><img src="https://github.com/mih777/images/blob/master/iphone.jpeg?raw=true" alt=""></a>
-    </div>
-    <div >
-        <span class="material-icons star_border">
-            star_border
-            star_border
-            star_border
-            star_border
-            star_border
-        </span>
-    </div>
-    <div class="cart-item-price cart-item">
-        <h3>цена 3453413</h3>
-    </div>
-    <div class="cart-item-buy cart-item">
-        <button class="buy-button">buy</button>
-    </div>
-</div> -->
+<!--/////// List view ///////////-->
+
+<div class="content border"  *ngIf="!listView">
     
+    <div class="border">
+        <img src="https://github.com/mih777/images/blob/master/iphone.jpeg?raw=true" alt="">
+    </div>
+    <div class="border">
+        <h2>Traits</h2>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Itaque, et. Nulla, odio accusantium quibusdam a excepturi
+        tempore sapiente similique eaque vel, nesciunt aliquam
+        perspiciatis, necessitatibus exercitationem velit 
+        aspernatur autem repellendus?
+    </div>
+    <div class="border">
+        <h3>Description</h3>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Itaque, et. Nulla, odio accusantium quibusdam a excepturi
+        tempore sapiente similique eaque vel, nesciunt aliquam
+        perspiciatis, necessitatibus exercitationem velit 
+        aspernatur autem repellendus?
+    </div>
+
+
+    
+</div>
+
