@@ -9,6 +9,8 @@ export class HeaderComponent implements OnInit {
 
   close: boolean = true
 
+  catId: string = 'samsung'
+
   constructor() { }
 
   ngOnInit(): void {

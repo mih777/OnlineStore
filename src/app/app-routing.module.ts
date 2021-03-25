@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { ContentComponent } from './comps/content/content.component';
+import { CategoryPageComponent } from './pages/category-page/category-page.component';
 import { MainComponent } from './pages/main/main.component';
 import { ProductCartComponent } from './pages/product-cart/product-cart.component';
 
@@ -8,13 +9,22 @@ import { ProductCartComponent } from './pages/product-cart/product-cart.componen
 const routes: Routes = [
   { path: '', component: ContentComponent, children: [
     { path: '', component: MainComponent },
-    { path: ':id', component: ProductCartComponent }
-  ]}
+    { path: ':id', component: ProductCartComponent },
+    { path: 'category/:catId', component: CategoryPageComponent },
+      {
+        path: 'buyer',
+        loadChildren: () => import('./buyer/buyer.module').then(m => m.BuyerModule)
+      }
+    ]
+  }  
+  
 ]
 
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {
+    preloadingStrategy: PreloadAllModules
+  })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

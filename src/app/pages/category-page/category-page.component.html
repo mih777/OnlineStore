@@ -1,0 +1,67 @@
+<div class="container border">
+    <div class="filter ">
+        <div >
+            <div><span class="material-icons " *ngIf="listView" (click)="isList()">view_list</span></div>
+            <div><span class="material-icons " *ngIf="!listView" (click)="isList()">view_module</span></div>
+        </div>
+        <div class="filter-search ">
+            <div class="search-input">
+                <input type="text" placeholder="search...">
+            </div>
+            <div class="search-button">
+                <button type="submit">search</button>
+            </div>
+        </div> 
+    </div>
+
+
+<!-- <button (click)="isList()">list</button>
+<button (click)="isList()">plitka</button> -->
+    
+    <div class="content" *ngIf="listView">
+    
+    <app-cart [listView]="listView"></app-cart>
+    <app-cart [listView]="listView"></app-cart>
+    <app-cart [listView]="listView"></app-cart>
+    <app-cart [listView]="listView"></app-cart>
+    <app-cart [listView]="listView"></app-cart>
+    <app-cart [listView]="listView"></app-cart>
+    <app-cart [listView]="listView"></app-cart>
+
+    </div>
+
+    <div class="content2" *ngIf="!listView">
+    <app-cart [listView]="listView"></app-cart> 
+    <app-cart [listView]="listView"></app-cart>
+    <app-cart [listView]="listView"></app-cart>
+    <app-cart [listView]="listView"></app-cart>
+    <app-cart [listView]="listView"></app-cart>
+    <app-cart [listView]="listView"></app-cart>
+    <app-cart [listView]="listView"></app-cart>
+    <app-cart [listView]="listView"></app-cart> 
+    
+    </div>   
+    
+    
+    
+
+    
+
+    <div class="item border">
+        <!-- <div class="filter-sort">
+            <div class="filter-sort-item ">
+                <div class="form-group">
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>from cheaper</option>
+                        <option>from expensive</option>
+                    </select>
+                  </div>
+            </div>
+            <div class="filter-sort-price ">
+                <div class="filter-sort-price-item left"><input type="text" placeholder="price from..."></div>
+                <div class="filter-sort-price-item left"><input type="text" placeholder="price to..."></div>
+                <div class="filter-sort-price-item"><button type="submit" value="find">find</button></div>
+            </div>
+        </div> -->
+    </div>
+</div>
