@@ -16,7 +16,9 @@ import { OrderComponent } from './order/order.component';
   imports: [
     CommonModule,
     RouterModule.forChild([
-      { path: 'login', component: LoginComponent }
+      { path: 'login', component: LoginComponent },
+      { path: 'register', component: RegisterComponent },
+      { path: 'order', component: OrderComponent }
     ])
   ],
   exports: [RouterModule]

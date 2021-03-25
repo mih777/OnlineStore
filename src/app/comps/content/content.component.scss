@@ -3,3 +3,11 @@
     margin: 0 auto;
     min-height: 200px;
 }
+
+@media(max-width: 1000px){
+    
+    .content{
+        width: 100%;
+        min-height: 200px;
+    }
+}

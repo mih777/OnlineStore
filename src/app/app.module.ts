@@ -11,6 +11,7 @@ import { MainComponent } from './pages/main/main.component';
 import { CartComponent } from './comps/cart/cart.component';
 import { ProductCartComponent } from './pages/product-cart/product-cart.component';
 import { CategoryPageComponent } from './pages/category-page/category-page.component';
+import { AboutComponent } from './pages/about/about.component';
 
 
 @NgModule({
@@ -22,12 +23,13 @@ import { CategoryPageComponent } from './pages/category-page/category-page.compo
     MainComponent,
     CartComponent,
     ProductCartComponent,
-    CategoryPageComponent
+    CategoryPageComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
