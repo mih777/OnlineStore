@@ -1,0 +1,81 @@
+$button-color: rgb(50, 83, 172);
+
+.page-identify{
+    h2{
+        color: rgb(104, 102, 0);
+    }
+    p{
+        color: #517384;
+    }
+    text-align: center;
+}
+
+.notificate{
+    display: grid;
+    align-content: center;
+    margin: 0 auto;
+    width: 100%;
+    justify-items: center;
+    height: 70px;
+}
+
+.content{
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 40px;
+    padding-bottom: 40px;
+}
+
+.form{
+    margin: 0 auto;
+    width: 30%;
+}
+
+input {  
+  width: 100%;  
+  display: block;
+  //width: 70%;
+  padding: 0.4rem;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+  margin-top: 3%;
+  outline: none;
+}
+
+.btn {
+    width: 120px;
+    height: 40px;
+    color:  $button-color;
+    background-color: white;
+    font-size: 21px;
+    border: 1px solid  $button-color;
+    outline: none;
+    border-radius: 1px;
+    &:hover {
+        background-color: $button-color;
+        color: white;
+    }
+}
+
+@media (max-width: 1400px) {
+    
+    .form{
+        margin: 0 auto;
+        width: 50%;
+    }
+}
+
+@media (max-width: 800px) {
+    .form{
+        margin: 0 auto;
+        width: 50%;
+    }
+}
+  
+@media (max-width: 600px) {
+    .form{
+        margin: 0 auto;
+        width: 80%;
+    }
+}
