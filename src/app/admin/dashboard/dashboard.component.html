@@ -1,1 +1,51 @@
-<p>dashboard works!</p>
+<div class="content">
+    <form [formGroup]="form" (ngSubmit)="createProduct()" class="form">
+        <div>
+            <input 
+                type="text" 
+                formControlName="title"
+                placeholder="title"
+            >
+        </div>
+        <div>
+            <input 
+                type="file" #input
+                (change)="onFileUpload($event)"
+            >
+        </div>
+        <div>
+            <input 
+                type="text"
+                formControlName="category"
+                placeholder="category" 
+            >
+        </div>
+        
+        <div class="text-editor">
+            <quill-editor 
+                formControlName="info"
+            ></quill-editor>
+        </div>    
+        
+        <div>
+            <input 
+                formControlName="price"
+                placeholder="price"
+                type="text" 
+            >
+        </div>
+        <div>
+            <button
+                class="btn"
+                type="submit"
+            >submit</button>
+        </div>
+    </form>
+
+    <div>
+        <img 
+          [src]="imagePreview" alt=""
+          *ngIf="imagePreview"
+        >
+      </div>
+</div>
