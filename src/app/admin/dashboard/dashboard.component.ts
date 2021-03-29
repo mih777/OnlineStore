@@ -52,7 +52,10 @@ export class DashboardComponent implements OnInit {
           this.image
        )
       .subscribe(
-        res => console.log('Created !',res)
+        res => {
+          this.form.reset()
+          console.log('Created !',res)
+        }
       )
   }
 
