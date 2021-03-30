@@ -20,33 +20,26 @@
 
     <div class="content" *ngIf="listView">
     
-    <app-cart [listView]="listView"></app-cart>
-    <app-cart [listView]="listView"></app-cart>
-    <app-cart [listView]="listView"></app-cart>
-    <app-cart [listView]="listView"></app-cart>
-    <app-cart [listView]="listView"></app-cart>
-    <app-cart [listView]="listView"></app-cart>
-    <app-cart [listView]="listView"></app-cart>
+    <app-cart 
+        *ngFor="let product of products"
+        [product]="product"
+        [listView]="listView"
+    ></app-cart>
+    
 
     </div>
 
     <div class="content2" *ngIf="!listView">
-    <app-cart [listView]="listView"></app-cart> 
-    <app-cart [listView]="listView"></app-cart>
-    <app-cart [listView]="listView"></app-cart>
-    <app-cart [listView]="listView"></app-cart>
-    <app-cart [listView]="listView"></app-cart>
-    <app-cart [listView]="listView"></app-cart>
-    <app-cart [listView]="listView"></app-cart>
-    <app-cart [listView]="listView"></app-cart> 
-    
+
+    <app-cart 
+        *ngFor="let product of products"
+        [product]="product"
+        [listView]="listView"
+    ></app-cart> 
+     
     </div>   
     
     
-    
-
-    
-
     <div class="item border">
         <!-- <div class="filter-sort">
             <div class="filter-sort-item ">

@@ -2,10 +2,10 @@
 <div class="content-pltka border"  *ngIf="listView">
     
     <div class="border">
-        <a href=""><img src="https://github.com/mih777/images/blob/master/iphone.jpeg?raw=true" alt=""></a>
+        <a href=""><img src="http://localhost:3000/{{product.imageSrc}}" alt=""></a>
     </div>
     <div class="border">
-        <h2>price 234987</h2>
+        <h2>{{ product.price }}</h2>
     </div>
     <div class="border">
         <button class="buy-button">buy</button>
@@ -14,15 +14,12 @@
 </div>
 
 
-
-
-
 <!--/////// List view ///////////-->
 
 <div class="content border"  *ngIf="!listView">
     
     <div class="border">
-        <a href=""><img src="https://github.com/mih777/images/blob/master/iphone.jpeg?raw=true" alt=""></a>
+        <a href=""><img src="http://localhost:3000/{{product.imageSrc}}" alt=""></a>
     </div>
     <div class="list-view-description border">
         <h2>Traits</h2>
@@ -34,7 +31,7 @@
             aspernatur autem repellendus?
         </div>
         <div>
-            <h3>price: 245643</h3>
+            <h3>{{ product.price }}</h3>
         </div>
     </div>
     <div class="list-view-description border">
