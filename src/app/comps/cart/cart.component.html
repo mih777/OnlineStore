@@ -13,7 +13,6 @@
     
 </div>
 
-
 <!--/////// List view ///////////-->
 
 <div class="content border"  *ngIf="!listView">
@@ -24,11 +23,7 @@
     <div class="list-view-description border">
         <h2>Traits</h2>
         <div>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Itaque, et. Nulla, odio accusantium quibusdam a excepturi
-            tempore sapiente similique eaque vel, nesciunt aliquam
-            perspiciatis, necessitatibus exercitationem velit 
-            aspernatur autem repellendus?
+            <quill-view-html [content]=" product?.info ">{{ product.info }}</quill-view-html>
         </div>
         <div>
             <h3>{{ product.price }}</h3>
@@ -38,10 +33,10 @@
         <h3>Description</h3>
         <div>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-        Itaque, et. Nulla, odio accusantium quibusdam a excepturi
-        tempore sapiente similique eaque vel, nesciunt aliquam
-        perspiciatis, necessitatibus exercitationem velit 
-        aspernatur autem repellendus?
+            Itaque, et. Nulla, odio accusantium quibusdam a excepturi
+            tempore sapiente similique eaque vel, nesciunt aliquam
+            perspiciatis, necessitatibus exercitationem velit 
+            aspernatur autem repellendus?
         </div>
         <div>
             <button  class="buy-button">byu</button>
