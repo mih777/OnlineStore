@@ -22,6 +22,7 @@ export class DashboardComponent implements OnInit {
       image: new FormControl(),
       category: new FormControl(''),
       info: new FormControl(''),
+      description: new FormControl(''),
       price: new FormControl('')
     })
   }
@@ -47,6 +48,7 @@ export class DashboardComponent implements OnInit {
           this.form.value.title,
           this.form.value.category,
           this.form.value.info,
+          this.form.value.description,
           this.form.value.price,
 
           this.image

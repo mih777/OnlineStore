@@ -19,24 +19,28 @@
                 >
             </div>
         </div>
-        
-            <!-- <input 
-                type="text"
-                formControlName="category"
-                placeholder="category" 
-            > -->
+          
+        <div>
+            <label for="">category</label>
             <select  formControlName="category" >
                 <option>Xiomi</option>
                 <option>IPhone</option>
                 <option>Samsung</option>
             </select>
-        
+        </div>
         
         <div class="text-editor">
+            <label for="">information</label><br><br>
             <quill-editor 
                 formControlName="info"
             ></quill-editor>
-        </div>    
+        </div>   <br>
+        <div class="text-editor">
+            <label for="">description</label><br><br>
+            <quill-editor 
+                formControlName="description"
+            ></quill-editor>
+        </div> 
         
         <div>
             <input 

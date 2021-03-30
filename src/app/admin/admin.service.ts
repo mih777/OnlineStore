@@ -24,6 +24,7 @@ export class AdminService {
     title: string,
     category: string,
     info: string,
+    description: string,
     price: string,
     image?: File,
 
@@ -34,6 +35,7 @@ export class AdminService {
     fd.append('title', title),
     fd.append('category', category),
     fd.append('info', info),
+    fd.append('description', description),
     fd.append('price', price)
 
     return this.http.post(`http://localhost:3000/api/products/create`, fd)
