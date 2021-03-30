@@ -1,4 +1,4 @@
-<div class="content">
+<div class="content border">
     <form [formGroup]="form" (ngSubmit)="createProduct()" class="form">
         <div>
             <input 
@@ -19,13 +19,18 @@
                 >
             </div>
         </div>
-        <div>
-            <input 
+        
+            <!-- <input 
                 type="text"
                 formControlName="category"
                 placeholder="category" 
-            >
-        </div>
+            > -->
+            <select  formControlName="category" >
+                <option>Xiomi</option>
+                <option>IPhone</option>
+                <option>Samsung</option>
+            </select>
+        
         
         <div class="text-editor">
             <quill-editor 
