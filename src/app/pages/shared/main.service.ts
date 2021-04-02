@@ -9,6 +9,7 @@ export interface Product{
   category: string,
   info: string,
   price: number | string
+  description: string
 }
 
 @Injectable({
